@@ -16,7 +16,7 @@ class PhoneNumberSerializer(serializers.ModelSerializer):
         read_only_fields = ("main_phone_number", "momo_phone_number")
 
 
-class CustomeUserSerializer(serializers.ModelSerializer):
+class CustomUserSerializer(serializers.ModelSerializer):
     phone_number = PhoneNumberSerializer()
     account_balance = AccountBalanceSerializer()
 
