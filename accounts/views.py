@@ -8,7 +8,7 @@ from rest_framework import viewsets
 from django.contrib.auth import get_user_model
 
 # Create your views here.
-from .models import PhoneNumber, AccountBalance, CustomUser
+from .models import PhoneNumber, AccountBalance
 from .serializers import (
     PhoneNumberSerializer,
     AccountBalanceSerializer,

@@ -1,6 +1,5 @@
 from rest_framework import serializers
 from .models import AccountBalance, PhoneNumber, CustomUser
-from .serializers import PhoneNumberSerializer, AccountBalanceSerializer
 
 
 class AccountBalanceSerializer(serializers.ModelSerializer):
@@ -23,4 +22,11 @@ class CustomeUserSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = CustomUser
-        fields = ("username", "name", "email", "phone_number", "account_balance")
+        fields = (
+            "username",
+            "name",
+            "email",
+            "phone_number",
+            "account_balance",
+            "total_winnings",
+        )
